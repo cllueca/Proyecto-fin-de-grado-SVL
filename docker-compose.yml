@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  flask:
+    build:
+      context: ./API/
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    container_name: flaskAPI
+
+  ssot1:
+    build:
+      context: ./TestSSO1/
+      dockerfile: Dockerfile
+    ports:
+      - '5100:5100'
+    container_name: vueSSOt1
+
+  ssot2:
+    build:
+      context: ./TestSSO2/
+      dockerfile: Dockerfile
+    ports:
+      - '5101:5101'
+    container_name: vueSSOt2
+
+  svl:
+    build:
+      context: ./SVL/
+      dockerfile: Dockerfile
+    ports:
+      - '5173:5173'
+    container_name: vueSVL
