@@ -28,3 +28,4 @@ Se puede descargar aquí: https://git-lfs.com/
 ## Tener en cuenta
 - La primera vez que se intente iniciar sesión con voz cada vez que se levante el servidor este tardará un tiempo en procesar la petición, ya que debe cargar la red neuronal. Los siguientes intentos se procesarán con mayor velocidad.
 - En la vista de perfil, al solicitar ver los servicios enlazados o disponibles para enlazar es posible que la información tarde unos segundos en aparecer en pantalla. Esto es debido a la conexión con el servidor de la base de datos.
+- Si se descarga el proyecto e intenta utilizarse no va a funcionar, debido a que la instancia de AWS con la base de datos que se utilizó ha sido deshabilitada. Si se desea habilitar una base de datos, se deberá actualizar el fichero .env, huubicado en la carpeta API. La base de datos se creo en PostgreSQL, siguiendo el modelo definido en la imagen EsquemaBBDD.png, hubicada en la carpeta API.
